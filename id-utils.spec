@@ -9,7 +9,6 @@ Release: %{release}
 License: GPL
 Group: Development/C
 Source: ftp://ftp.enst.fr/pub/gnu/gnits/%{name}-%{version}.tar.bz2
-Buildroot: %{_tmppath}/%{name}-buildroot
 
 %description
 mkid is a simple, fast, high-capacity, language-independent
