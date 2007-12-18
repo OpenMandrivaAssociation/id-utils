@@ -20,19 +20,14 @@ serving as an augmented tags facility.
 
 %prep
 rm -rf $RPM_BUILD_ROOT
-
 %setup -q
 
 %build
-
 %configure
-
 %make
 
 %install
-
 %makeinstall
-
 %find_lang %name
 
 %clean
