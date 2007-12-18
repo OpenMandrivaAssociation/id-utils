@@ -8,6 +8,7 @@ Version: %{version}
 Release: %{release}
 License: GPL
 Group: Development/C
+BuildRequires: emacs
 Source: ftp://ftp.enst.fr/pub/gnu/gnits/%{name}-%{version}.tar.bz2
 
 %description
