@@ -38,10 +38,10 @@ rm -rf $RPM_BUILD_ROOT
 %clean
 
 %post
-/sbin/install-info %{_infodir}/id-utils.info.%_extension %{_infodir}/dir 
+%_install_info %name
 
 %preun
-/sbin/install-info --delete %{_infodir}/id-utils.info.%_extension %{_infodir}/dir
+%_remove_install_info %name
 
 
 %files -f %name.lang
