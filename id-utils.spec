@@ -38,17 +38,17 @@ rm -rf $RPM_BUILD_ROOT
 %clean
 
 %post
-/sbin/install-info %{_infodir}/id-utils.info.bz2 %{_infodir}/dir 
+/sbin/install-info %{_infodir}/id-utils.info.%_extension %{_infodir}/dir 
 
 %preun
-/sbin/install-info --delete %{_infodir}/id-utils.info.bz2 %{_infodir}/dir
+/sbin/install-info --delete %{_infodir}/id-utils.info.%_extension %{_infodir}/dir
 
 
 %files -f %name.lang
 %defattr (-,root,root)
 %doc README INSTALL COPYING AUTHORS ABOUT-NLS NEWS THANKS TODO 
 %{_bindir}/*
-%{_infodir}/*.bz2
+%{_infodir}/*
 %{_datadir}/emacs/site-lisp/*
 %{_datadir}/id-lang.map
 
