@@ -19,7 +19,6 @@ queries can be issued from the command-line, or from within emacs,
 serving as an augmented tags facility.     
 
 %prep
-rm -rf $RPM_BUILD_ROOT
 %setup -q
 
 %build
@@ -27,10 +26,12 @@ rm -rf $RPM_BUILD_ROOT
 %make
 
 %install
+rm -rf $RPM_BUILD_ROOT
 %makeinstall
 %find_lang %name
 
 %clean
+rm -rf $RPM_BUILD_ROOT
 
 %post
 %_install_info %name
