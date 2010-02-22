@@ -1,16 +1,16 @@
-%define name id-utils
-%define version 3.2d
-%define release  %mkrel 9
+%define	name	id-utils
+%define	version	3.2d
+%define	release	%mkrel 10
 
-Summary:  Language-independent identifier database tool 
-Name: %{name}
-Version: %{version}
-Release: %{release}
-License: GPL
-Group: Development/C
-BuildRequires: emacs
-Source: ftp://ftp.enst.fr/pub/gnu/gnits/%{name}-%{version}.tar.bz2
-Buildroot: %{_tmppath}/%{name}-buildroot
+Summary:	Language-independent identifier database tool 
+Name:		%{name}
+Version:	%{version}
+Release:	%{release}
+License:	GPLv2
+Group:		Development/C
+BuildRequires:	emacs
+Source:		ftp://ftp.enst.fr/pub/gnu/gnits/%{name}-%{version}.tar.bz2
+Buildroot:	%{_tmppath}/%{name}-buildroot
 
 %description
 mkid is a simple, fast, high-capacity, language-independent
@@ -24,7 +24,7 @@ serving as an augmented tags facility.
 %setup -q
 
 %build
-%configure
+%configure2_5x
 %make
 
 %install
