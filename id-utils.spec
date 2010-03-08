@@ -1,6 +1,6 @@
 %define	name	id-utils
-%define	version	3.2d
-%define	release	%mkrel 10
+%define	version	4.2
+%define	release	%mkrel 1
 
 Summary:	Language-independent identifier database tool 
 Name:		%{name}
@@ -49,4 +49,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_infodir}/*
 %{_datadir}/emacs/site-lisp/*
 %{_datadir}/id-lang.map
+/usr/share/locale/de/LC_MESSAGES/idutils.mo
+/usr/share/locale/fr/LC_MESSAGES/idutils.mo
+/usr/share/locale/nl/LC_MESSAGES/idutils.mo
+/usr/share/locale/pl/LC_MESSAGES/idutils.mo
 
