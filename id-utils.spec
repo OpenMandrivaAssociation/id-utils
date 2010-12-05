@@ -1,6 +1,6 @@
 %define	name	id-utils
 %define	version	4.2
-%define	release	%mkrel 1
+%define	release	%mkrel 2
 
 Summary:	Language-independent identifier database tool 
 Name:		%{name}
