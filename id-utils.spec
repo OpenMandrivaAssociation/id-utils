@@ -8,6 +8,11 @@ Version:	%{version}
 Release:	%{release}
 License:	GPLv2
 Group:		Development/C
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	emacs
 Source:		ftp://ftp.enst.fr/pub/gnu/gnits/%{name}-%{version}.tar.bz2
 Buildroot:	%{_tmppath}/%{name}-buildroot
